@@ -1,9 +1,11 @@
 /*------------------------------------------------------------------
-Project:  ComingSoon
-Version:  
-Last change:  
-Assigned to:  Bach Le
-Primary use:  
+Project:  NoCapCode
+Version:  V2.0.1
+Date:     12/12/2025
+Last change:  01/22/2025
+Assigned to:  Om Vashishtha
+Primary use:  Coming Soon / Landing Page
+Copyright (c) 2025 NoCapCode (https://nocapcode.com/)
 -------------------------------------------------------------------*/
 
 /*//////////////////////////////////////////////////////////////////
@@ -344,17 +346,43 @@ Primary use:
 
 /*---------------------------------------------*/
 
+/* Circular social icons */
 .how-social {
-    color: #999;
-    font-size: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: transparent;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000; /* black icon */
+    font-size: 18px;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
 }
 
+/* Hover – premium glow */
 .how-social:hover {
-    background-color: #fff;
-    color: #555;
+    color: #0ea5e9;
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(14, 165, 233, 0.6);
+
+    box-shadow:
+        0 6px 18px rgba(14, 165, 233, 0.25),
+        0 0 0 1px rgba(14, 165, 233, 0.25);
+
+       transform: translateY(-2px) scale(1.03);
+}
+
+.how-social:active {
+    transform: scale(0.95);
 }
 
 /*---------------------------------------------*/
